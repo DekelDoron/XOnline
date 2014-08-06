@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+
+    
+        <com.example.xonlinepremium.customGameViews.CustomCube
+            android:id="@+id/topLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/empty_player_image" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/board_vertical_top" >
+        </ImageView>
+
+        <com.example.xonlinepremium.customGameViews.CustomCube
+            android:id="@+id/topCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/empty_player_image" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/board_vertical_top" >
+        </ImageView>
+
+        <com.example.xonlinepremium.customGameViews.CustomCube
+            android:id="@+id/topRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/empty_player_image" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/board_horizontal" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.example.xonlinepremium.customGameViews.CustomCube
+            android:id="@+id/middleLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/empty_player_image" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/board_vertical_middle" >
+        </ImageView>
+
+        <com.example.xonlinepremium.customGameViews.CustomCube
+            android:id="@+id/middleCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/empty_player_image" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/board_vertical_middle" >
+        </ImageView>
+
+        <com.example.xonlinepremium.customGameViews.CustomCube
+            android:id="@+id/middleRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/empty_player_image" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:src="@drawable/board_horizontal" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.example.xonlinepremium.customGameViews.CustomCube
+            android:id="@+id/bottomLeft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/empty_player_image" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+        android:src="@drawable/board_vertical_bottom" >
+
+        </ImageView>
+
+        <com.example.xonlinepremium.customGameViews.CustomCube
+            android:id="@+id/bottomCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/empty_player_image" />
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+        android:src="@drawable/board_vertical_bottom" >
+
+        </ImageView>
+
+        <com.example.xonlinepremium.customGameViews.CustomCube
+            android:id="@+id/bottomRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/empty_player_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/score"
+            android:gravity="top|center_horizontal" >
+
+            <TextView
+                android:id="@+id/tvScoreX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewTurn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   :   "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvScoreO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp" >
+
+    </FrameLayout>
+    
+</LinearLayout>
